@@ -1,0 +1,84 @@
+.filter-image {
+    filter: grayscale(0%);
+    transition: filter 3000ms ease-in-out;
+    opacity: 100%;
+}
+
+
+.filter-image:hover {
+    filter: grayscale(100%) contrast(500%) opacity(0%);
+}
+
+
+
+.transition-button {
+    background-color: rgb(129, 109, 97);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+
+
+.transition-button:hover {
+    background-color: aquamarine;
+}
+
+
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 97%;
+    }
+}
+
+
+
+.pseudo-list li:nth-child(odd) {
+    background-color: rgb(129, 109, 97);
+    width: fit-content;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: aquamarine;
+    width: fit-content;
+}
+
+
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: '"';
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: aquamarine;
+}
+
+.quote::after {
+    content: '"';
+    font-size: 40px;
+    position: absolute;
+    left: 118px;
+    bottom: -20px;
+    color: aquamarine;
+}
